@@ -8,7 +8,7 @@ Primary version.
 
 
 # Privacy policy
- http://beskid.geo.uj.edu.pl/p/ms/accumon-privacy.htm
+ https://github.com/pkar70/AccuMon/wiki/Privacy-policy
 
 
 
