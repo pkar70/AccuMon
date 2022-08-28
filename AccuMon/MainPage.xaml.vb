@@ -1,4 +1,6 @@
 ﻿
+' 2022.04.02 aktualizacja do nowego pkarmodule
+
 Public NotInheritable Class MainPage
     Inherits Page
 
@@ -22,7 +24,7 @@ Public NotInheritable Class MainPage
     End Function
 
     Private Async Sub Page_Loaded(sender As Object, e As RoutedEventArgs)
-        GetAppVers(uiVers)
+        uiVers.ShowAppVers()
 
         If Not Await CanRegisterTriggersAsync() Then
             DialogBox("Nie umiem bez triggerów!")

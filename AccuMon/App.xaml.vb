@@ -85,6 +85,9 @@
 
     End Function
 
+    Private Async Function AppServiceLocalCommand(sCommand As String) As Task(Of String)
+        Return ""
+    End Function
 
     Public Shared gLogData As String = ""
 
@@ -93,6 +96,7 @@
         sLogLine = DateTime.Now.ToString("yyyy.MM.dd HH:mm ") & sLogLine & vbCrLf
         gLogData = gLogData & sLogLine
 
+        ' log w App ma tylko 100 entries
         Dim aLog As String() = gLogData.Split("vbCrLf")
         If aLog.Length > 100 Then
             Dim iInd As Integer = gLogData.IndexOf(vbCrLf)
